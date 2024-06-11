@@ -2,7 +2,7 @@
 
 This challenge was really fun. It might have been easier for some more experienced people but I am fairly new and had a lot of headache near the end.
 
-This challenge started off fairly straight-forward since I knew from the first glance into the Ghidra disassembly code it would be a stack pivot problem since it only gives you 16 bytes to work with after the `RBP` register.
+This challenge started off fairly straight-forward since from the first glance into the disassembly code you can see that it would be a stack pivot problem since it only gives you 16 bytes to work with.
 
 ``` c
 undefined8 main(void)
