@@ -60,9 +60,9 @@ arr = [0xaa, 0xbb, 0xcc, 0xdd, 0xee]
 
 This string set will be created in a nested for loop where the bytes in between the `|` are repeated 10 times through the count variable `x` and `idx` is the count variable from the outside.
 
-Now when I first started looking at the `runnnn()` function it all looked so confusing so I decided to take a gamble and tried to dynamically debug it through GDB to see if each value was mapped to another, for some reason it showed me if wasn't (when it technically was, I have no clue what went wrong but it's whatever).
+Now when I first started looking at the `runnnn()` function it all looked so confusing so I decided to take a gamble and tried to dynamically debug it through GDB to see if each value was mapped to another, for some reason it showed me it wasn't (when it technically was, I have no clue what went wrong but it's whatever).
 
-Anyways I then had my [friend](https://github.com/Dylan-Jessee) come and join me and after a little bit he came to the relization that the bytes per character were assembly instructions and the `runnnn()` function was kind of like an interpreter. So with that in mind we mapped everything out on a whiteboard and figured out that what it was doing was something similar to this:
+Anyways I then had my [friend](https://github.com/Dylan-Jessee) come and join me and after a little bit he came to the realization that the bytes per character were assembly instructions and the `runnnn()` function was kind of like an interpreter. So with that in mind we mapped everything out on a whiteboard and figured out that what it was doing was something similar to this:
 
 ```python
 # runnnn function from binary
