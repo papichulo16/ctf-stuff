@@ -4,6 +4,7 @@ The program is actually just a poison null byte challenge on glibc 2.25 so there
 
 Sadly, this did not work well since when I tried to unlink it would just write the `main_arena` address into the chunk pointers array instead. I tried to go around this for quite a while but no cigar. I then rewatched the HeapLab unsafe unlinking video and thought to myself "oh, this is so much simpler than I thought" and recided to restart the script. Anyways here is the failed attempt:
 
+Edit: also the binary uses `strcpy()` for the `edit()` function. This is why there are for loops and whatnot.
 ```python
 # google poison null byte
 create(io, 0x18) # 0
