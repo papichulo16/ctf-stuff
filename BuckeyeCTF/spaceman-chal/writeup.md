@@ -117,7 +117,9 @@ After this we kind of got stuck, then what my friend thought to do was to start 
 This is where we got stumped, we tried a lot of things but none of them worked. One good thing that did come out of this though is that I started getting more and more comfortable reading a RISC-V manual throughout the process and started to learn a lot about the architecture. 
 
 In the end, we were in the right path to the intended solution. We just needed more time to keep looking at ROP gadgets and to find what the author called, `the magic gadget`. 
+
 EDIT: turns out ROPgadget did not even show us the gadget we needed. I actually am so pissed off about that now, this sucks.
+EDIT 2: I found out how to find it, I had to go through and run `objdump` on the binary and then grepped for the specific gadgets. This is so tragic.
 
 One thing that I did find interesting though, was a specific person's solve. His username on Discord was `lobob-rondo` and he said what he did was and I quote "leak stack, call `__nptl_change_stack_perm` to make stack executable and shellcode". So what I found interesting was that, first ofall, you can leak the stack through `libc_environ`. But most importantly, THERE IS A FUNCTION THAT WILL CHANGE THE STACK TO BE EXECUTABLE!!!! LIKE WHAT????? WHY IS THAT THERE??????? 
 
