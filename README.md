@@ -1,4 +1,4 @@
-# These are my personal CTF writeups and exploit scripts mwahahahaha
+# These are my personal CTF writeups and exploit scripts
 ### The writeups are located here:
  - [library](https://github.com/papichulo16/ctf-stuff/tree/main/PwnSec/library): heap challenge with double pointers
  - [jungle](https://github.com/papichulo16/ctf-stuff/tree/main/SunshineCTF/jungle): Tcache poisoning challenge
