@@ -1,4 +1,8 @@
 # These are my personal CTF writeups and exploit scripts
+
+### Blog-like posts tracking external learning process:
+ - [Kernel Exploitation](https://github.com/papichulo16/ctf-stuff/tree/main/learning_kernel_stuff)
+
 ### The writeups are located here:
  - [library](https://github.com/papichulo16/ctf-stuff/tree/main/PwnSec/library): heap challenge with double pointers
  - [jungle](https://github.com/papichulo16/ctf-stuff/tree/main/SunshineCTF/jungle): Tcache poisoning challenge
