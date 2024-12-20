@@ -1,6 +1,6 @@
 # These are my personal CTF writeups and exploit scripts
 
-### Blog-like posts tracking external learning process:
+### Blog-like posts tracking external learning progress:
  - [Kernel Exploitation](https://github.com/papichulo16/ctf-stuff/tree/main/learning_kernel_stuff)
 
 ### The writeups are located here:
