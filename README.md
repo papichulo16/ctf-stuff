@@ -13,5 +13,5 @@
  - [strings_only](https://github.com/papichulo16/ctf-stuff/tree/main/PatriotCTF/strings_only/writeup.md): google poison null byte/unsafe unlink
  - [archeology](https://github.com/papichulo16/ctf-stuff/tree/main/CSAW24/archeology-rev/writeup.md): custom VM reversing challenge
  - [vip](https://github.com/papichulo16/ctf-stuff/tree/main/CSAW24/vip-pwn/writeup.md): command injection with extra steps
- - [nolibc](https://github.com/papichulo16/ctf-stuff/tree/main/SekaiCTF/writeup.md): custom heap challenge
+ - [nolibc](https://github.com/papichulo16/ctf-stuff/tree/main/SekaiCTF/nolibc.md): custom heap challenge
  - [warmup](https://github.com/papichulo16/ctf-stuff/tree/main/akasec/writeup.md): my first ever pwn solve, stack pivot to sigrop
