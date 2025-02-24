@@ -4,6 +4,7 @@
  - [Kernel Exploitation](https://github.com/papichulo16/ctf-stuff/tree/main/learning_kernel_stuff)
 
 ### The writeups are located here:
+ - [checksumz](https://github.com/papichulo16/ctf-stuff/blob/main/IrisCTF2025/checksumz/writeup.md): read/write on kernel heap then modprobe path overwrite
  - [screenwriter](https://github.com/papichulo16/ctf-stuff/blob/main/WargamesMYCTF/screenwriter/writeup.md): FSOP challenge
  - [library](https://github.com/papichulo16/ctf-stuff/tree/main/PwnSec/library/writeup.md): heap challenge with double pointers
  - [jungle](https://github.com/papichulo16/ctf-stuff/tree/main/SunshineCTF/jungle/writeup.md): Tcache poisoning challenge
