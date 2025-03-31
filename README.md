@@ -2,6 +2,7 @@
 
 ### Blog-like posts tracking external learning progress:
  - [Kernel Exploitation](https://github.com/papichulo16/ctf-stuff/tree/main/learning_kernel_stuff)
+ - [Embedded Hacking](https://github.com/papichulo16/ctf-stuff/tree/main/hardware-hacking)
 
 ### The writeups are located here:
  - [checksumz](https://github.com/papichulo16/ctf-stuff/blob/main/IrisCTF2025/checksumz/writeup.md): read/write on kernel heap then modprobe path overwrite
