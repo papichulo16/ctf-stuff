@@ -8,7 +8,7 @@ I will say, this is technically NOT hardware hacking since I am only going to ta
 When I was first trying to crack open the device I could not find any screws so I tried to yank it open, but there were these two plastic beams keeping it together, weird. What I did was drill holes on the box so that the beams would let out, and they did. Funny thing though, the screws were hiding behind a sticker so I didn't even have to do all that.
 
 Now looking at the device on first glance you can see things like the CPU, the flash memory, etc. You can find sheets on these components by looking up the names written on top of the component. The main thing that I found interesting was these four labeled pin holes.
-![Image of the pin holes](./images/IMG_4681.jpeg "lookie here")
+[Image of the pin holes](./images/IMG_4681.jpeg "lookie here")
 
 If you look at the labels you will see a GND, VCC, Tx, Rx. This is a great sign for it to be UART because UART also has 4 pins with a transmit, recieve, ground, and VCC. To double check I will use a multimeter to make sure that this is all correct:
  - GND: All I had to do was run continuity on it with a metal part in the device and it should beep
