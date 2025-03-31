@@ -21,6 +21,7 @@ Cool now that we found UART we can then solder some pins in to be able to hook i
 ![Image of the soldered pins](./images-uart/IMG_4733.jpeg)
 
 Okay cool we have the pins soldered in, but what goes where? Well luckily UART is pretty straight forward, GND to GND, VCC to VCC, Tx to Rx, and Rx to Tx. The reason why there is a crossover in transmit and recieve is because that is how communication works. The way that I view it is like when you speak (Tx) you want someone to be listening to you (Rx) compared to trying to speak over you (Tx) and vice versa. Here is a little model I found online:
+
 ![Image of uart](./images-uart/uart.png)
 
 ### Finding baud rate
@@ -30,7 +31,7 @@ Now that I got some signals I zoomed in to one part and discerned the smallest p
 ![Image of pulseview](./images-uart/IMG_4735.jpeg)
 
 Now that you have the stuff right you should see text:
-![Text](./images-uart/IMG_4681.jpeg)
+![Text](./images-uart/IMG_4734.jpeg)
 
 ### Communicating with the Bus Pirate
 Now when doing this you can hook it up to the bus pirate, MISO (master in slave out) counts as Rx and MOSI (master out slave in) counts as Tx. Then I used tio to talk to the device.
